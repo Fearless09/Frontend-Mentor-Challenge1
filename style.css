@@ -1,0 +1,86 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate300: hsl(212, 45%, 89%);
+  --slate500: hsl(216, 15%, 48%);
+  --slate900: hsl(218, 44%, 22%);
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--slate300);
+}
+
+.page-wrapper {
+  display: grid;
+  height: 100vh;
+  overflow: visible;
+  padding: 20px;
+}
+
+.grid-item1 {
+  grid-row: 1 / 10;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.container {
+  display: flex; 
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 15px;
+  background-color: var(--white);
+  padding: 15px 15px 25px;
+}
+
+.qr-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+span {
+  display: block; 
+  text-align: center; 
+  margin: 15px 0;
+}
+
+.first {
+  font-weight: 700; 
+  font-size: 21px;
+  color: var(--slate900);
+}
+
+.second {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--slate500);
+}
+
+.attribution {
+  font-size: 14px;
+  grid-row: 10 / 12;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 460px) {
+  .attribution {
+    font-size: 12px;
+    text-align: center;
+  }
+}
