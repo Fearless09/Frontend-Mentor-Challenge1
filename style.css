@@ -20,14 +20,14 @@ body {
 
 .page-wrapper {
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   overflow: visible;
   padding: 20px;
 }
 
 .grid-item1 {
   grid-row: 1 / 10;
-  max-width: 300px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
