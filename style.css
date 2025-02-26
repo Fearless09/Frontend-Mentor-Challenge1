@@ -44,6 +44,7 @@ body {
   border-radius: 15px;
   background-color: var(--white);
   padding: 15px 15px 25px;
+  box-shadow: 0 0 25px var(--slate900);
 }
 
 .qr-image {
