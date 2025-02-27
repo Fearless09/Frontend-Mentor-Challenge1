@@ -11,24 +11,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Outfit', sans-serif;
 }
 
 body {
   background-color: var(--slate300);
+  font-family: 'Outfit', sans-serif;
 }
 
 .page-wrapper {
-  display: grid;
+  display: flex;
   min-height: 100vh;
-  overflow: visible;
   padding: 20px;
-}
-
-.grid-item1 {
-  grid-row: 1 / 10;
-  max-width: 320px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .center {
@@ -40,39 +34,44 @@ body {
 .container {
   display: flex; 
   flex-direction: column;
-  gap: 15px;
+  /* gap: 15px; */
+  max-width: 320px;
   border-radius: 15px;
   background-color: var(--white);
   padding: 15px 15px 25px;
+  margin: auto;
   box-shadow: 0 0 25px var(--slate900);
 }
 
 .qr-image {
   width: 100%;
   border-radius: 15px;
+  margin-bottom: 15px;
 }
 
-span {
-  display: block; 
-  text-align: center; 
-  margin: 15px 0;
+h1, p {
+  padding: 10px;
+  text-align: center;
 }
 
-.first {
-  font-weight: 700; 
-  font-size: 21px;
+h1 {
+  font-weight: 900; 
+  font-size: 19px;
   color: var(--slate900);
 }
 
-.second {
-  font-weight: 400;
+p {
+  font-weight: 500;
   font-size: 16px;
   color: var(--slate500);
 }
-
 .attribution {
   font-size: 14px;
-  grid-row: 10 / 12;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .attribution a {
@@ -82,6 +81,5 @@ span {
 @media (max-width: 460px) {
   .attribution {
     font-size: 12px;
-    text-align: center;
   }
 }
