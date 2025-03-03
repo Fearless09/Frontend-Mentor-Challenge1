@@ -7,33 +7,38 @@
   --slate900: hsl(218, 44%, 22%);
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
   background-color: var(--slate300);
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+  gap: 20px;
 }
 
 .page-wrapper {
-  display: flex;
-  min-height: 100vh;
-  padding: 20px;
+  /* min-height: 100vh; */
+  padding: 30px 16px;
   position: relative;
+  flex-grow: 1;
 }
 
 .center {
-  display: flex; 
-  justify-content: center; 
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .container {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   max-width: 320px;
   border-radius: 15px;
@@ -49,13 +54,14 @@ body {
   margin-bottom: 15px;
 }
 
-h1, p {
+h1,
+p {
   padding: 10px;
   text-align: center;
 }
 
 h1 {
-  font-weight: 900; 
+  font-weight: 900;
   font-size: 19px;
   color: var(--slate900);
 }
@@ -68,10 +74,11 @@ p {
 .attribution {
   font-size: 14px;
   padding: 10px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
+  gap: 4px;
   width: 100%;
-  margin: 0 auto;
+  margin-top: auto;
 }
 
 .attribution a {
